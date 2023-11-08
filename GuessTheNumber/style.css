@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 16px;
+    color: rgb(87, 136, 87);
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 600px;
+}
+
+#output .user {
+    color: rgb(87, 136, 87);
+    font-weight: bold;
+}
+
+#prompt {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#prompt input {
+    display: block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgb(87, 136, 87);
+    padding: 0 .5rem;
+    font-size: inherit;
+    font-family: 'Press Start 2P', monospace;
+    position: relative;
+}
+
+#prompt::before {
+    content: '> ';
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+    padding-left: 76px;
+    gap: 16px;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+#play-again {
+    display: none;
+    background: transparent;
+    border: 2px solid rgb(87, 136, 87);
+    height: 56px;
+    width: 250px;
+    color: rgb(87, 136, 87);
+    font-size: 20px;
+    font-family: 'Press Start 2P', monospace;
+    margin-top: 20px;
+}
